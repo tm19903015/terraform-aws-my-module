@@ -1,0 +1,36 @@
+# ==========================================
+# Terraform / Cloud Provider Management
+# ==========================================
+
+# Local directory for Terraform plugins and modules
+.terraform/
+
+# Terraform lock file (Optional: Commit if teamwork requires, ignore for sandbox)
+.terraform.lock.hcl
+
+# State files and backups
+*.tfstate
+*.tfstate.*
+*.tfplan
+
+# Record and variable mappings
+.tf_var_map.html
+
+# ==========================================
+# Security & Credentials (CRITICAL)
+# ==========================================
+
+# Dynamic variable definitions containing sensitive data
+*.tfvars
+*.tfvars.json
+
+# ==========================================
+# System & Artifact Files
+# ==========================================
+
+# Compiled packages or lambda artifacts
+*.zip
+
+# Operating System specific metadata
+.DS_Store
+Thumbs.db
